@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة التجارة الإلكترونية - لوحة الأرباح</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <i class="fas fa-chart-line"></i>
+                <span>منصة الأرباح الذهبية</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#leaderboard">لوحة المتصدرين</a></li>
+                <li><a href="#stats">الإحصائيات</a></li>
+                <li><a href="#news">الأخبار</a></li>
+            </ul>
+            <div class="nav-stats">
+                <div class="stat-item">
+                    <span class="stat-value" id="total-traders">2,847</span>
+                    <span class="stat-label">متداول نشط</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="total-profits">$12.5M</span>
+                    <span class="stat-label">إجمالي الأرباح</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="champion-card">
+                <div class="crown">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <div class="champion-info">
+                    <h1 class="champion-name">محمد الهدوني</h1>
+                    <div class="champion-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>المغرب</span>
+                    </div>
+                    <div class="champion-rank">
+                        <span class="rank-number">#1</span>
+                        <span class="rank-title">المتداول الأول عالمياً</span>
+                    </div>
+                </div>
+                <div class="champion-stats">
+                    <div class="stat-box">
+                        <span class="stat-number" id="champion-profit">$2,847,592</span>
+                        <span class="stat-desc">إجمالي الأرباح</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">98.7%</span>
+                        <span class="stat-desc">معدل النجاح</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">1,247</span>
+                        <span class="stat-desc">صفقة ناجحة</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-text">
+                <h2 class="hero-title">أسطورة التجارة الإلكترونية</h2>
+                <p class="hero-subtitle">محمد الهدوني يحطم الأرقام القياسية ويحقق أرباحاً خيالية في عالم التجارة الإلكترونية</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        ابدأ التداول الآن
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-play"></i>
+                        شاهد القصة
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="floating-elements">
+            <div class="floating-coin coin-1">
+                <i class="fas fa-coins"></i>
+            </div>
+            <div class="floating-coin coin-2">
+                <i class="fas fa-dollar-sign"></i>
+            </div>
+            <div class="floating-coin coin-3">
+                <i class="fas fa-gem"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section id="leaderboard" class="leaderboard">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-trophy"></i>
+                لوحة المتصدرين
+            </h2>
+            <p class="section-subtitle">أفضل المتداولين في منصتنا هذا الشهر</p>
+            
+            <div class="leaderboard-table">
+                <div class="table-header">
+                    <div class="col-rank">الترتيب</div>
+                    <div class="col-trader">المتداول</div>
+                    <div class="col-country">البلد</div>
+                    <div class="col-profit">الأرباح</div>
+                    <div class="col-growth">النمو</div>
+                    <div class="col-trades">الصفقات</div>
+                </div>
+                
+                <div class="table-body">
+                    <div class="trader-row champion-row">
+                        <div class="col-rank">
+                            <div class="rank-badge gold">
+                                <i class="fas fa-crown"></i>
+                                <span>1</span>
+                            </div>
+                        </div>
+                        <div class="col-trader">
+                            <div class="trader-info">
+                                <div class="trader-avatar">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="trader-details">
+                                    <span class="trader-name">محمد الهدوني</span>
+                                    <span class="trader-title">خبير التجارة الإلكترونية</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-country">
+                            <i class="fas fa-flag"></i>
+                            <span>المغرب</span>
+                        </div>
+                        <div class="col-profit">
+                            <span class="profit-amount">$2,847,592</span>
+                        </div>
+                        <div class="col-growth">
+                            <span class="growth-positive">+347.2%</span>
+                        </div>
+                        <div class="col-trades">
+                            <span>1,247</span>
+                        </div>
+                    </div>
+                    
+                    <div class="trader-row">
+                        <div class="col-rank">
+                            <div class="rank-badge silver">
+                                <span>2</span>
+                            </div>
+                        </div>
+                        <div class="col-trader">
+                            <div class="trader-info">
+                                <div class="trader-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="trader-details">
+                                    <span class="trader-name">أحمد السعودي</span>
+                                    <span class="trader-title">متداول محترف</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-country">
+                            <i class="fas fa-flag"></i>
+                            <span>السعودية</span>
+                        </div>
+                        <div class="col-profit">
+                            <span class="profit-amount">$1,892,340</span>
+                        </div>
+                        <div class="col-growth">
+                            <span class="growth-positive">+234.8%</span>
+                        </div>
+                        <div class="col-trades">
+                            <span>987</span>
+                        </div>
+                    </div>
+                    
+                    <div class="trader-row">
+                        <div class="col-rank">
+                            <div class="rank-badge bronze">
+                                <span>3</span>
+                            </div>
+                        </div>
+                        <div class="col-trader">
+                            <div class="trader-info">
+                                <div class="trader-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="trader-details">
+                                    <span class="trader-name">فاطمة الإماراتية</span>
+                                    <span class="trader-title">خبيرة التسويق</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-country">
+                            <i class="fas fa-flag"></i>
+                            <span>الإمارات</span>
+                        </div>
+                        <div class="col-profit">
+                            <span class="profit-amount">$1,456,789</span>
+                        </div>
+                        <div class="col-growth">
+                            <span class="growth-positive">+198.5%</span>
+                        </div>
+                        <div class="col-trades">
+                            <span>756</span>
+                        </div>
+                    </div>
+                    
+                    <div class="trader-row">
+                        <div class="col-rank">
+                            <div class="rank-badge">
+                                <span>4</span>
+                            </div>
+                        </div>
+                        <div class="col-trader">
+                            <div class="trader-info">
+                                <div class="trader-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="trader-details">
+                                    <span class="trader-name">خالد المصري</span>
+                                    <span class="trader-title">متداول متقدم</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-country">
+                            <i class="fas fa-flag"></i>
+                            <span>مصر</span>
+                        </div>
+                        <div class="col-profit">
+                            <span class="profit-amount">$987,654</span>
+                        </div>
+                        <div class="col-growth">
+                            <span class="growth-positive">+156.3%</span>
+                        </div>
+                        <div class="col-trades">
+                            <span>543</span>
+                        </div>
+                    </div>
+                    
+                    <div class="trader-row">
+                        <div class="col-rank">
+                            <div class="rank-badge">
+                                <span>5</span>
+                            </div>
+                        </div>
+                        <div class="col-trader">
+                            <div class="trader-info">
+                                <div class="trader-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="trader-details">
+                                    <span class="trader-name">نور اللبنانية</span>
+                                    <span class="trader-title">متداولة ناشئة</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-country">
+                            <i class="fas fa-flag"></i>
+                            <span>لبنان</span>
+                        </div>
+                        <div class="col-profit">
+                            <span class="profit-amount">$654,321</span>
+                        </div>
+                        <div class="col-growth">
+                            <span class="growth-positive">+123.7%</span>
+                        </div>
+                        <div class="col-trades">
+                            <span>432</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="stats" class="statistics">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-chart-bar"></i>
+                إحصائيات مذهلة
+            </h2>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" id="active-users">2,847</span>
+                        <span class="stat-label">متداول نشط</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" id="total-volume">$12.5M</span>
+                        <span class="stat-label">حجم التداول</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" id="successful-trades">15,432</span>
+                        <span class="stat-label">صفقة ناجحة</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" id="countries">47</span>
+                        <span class="stat-label">دولة</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chart-container">
+                <canvas id="profitChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-newspaper"></i>
+                آخر الأخبار
+            </h2>
+            
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-image">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="news-content">
+                        <h3>محمد الهدوني يحطم رقماً قياسياً جديداً</h3>
+                        <p>حقق المتداول المغربي محمد الهدوني رقماً قياسياً جديداً بأرباح تجاوزت 2.8 مليون دولار في شهر واحد</p>
+                        <div class="news-meta">
+                            <span class="news-date">منذ ساعتين</span>
+                            <span class="news-category">أخبار عاجلة</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-card">
+                    <div class="news-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="news-content">
+                        <h3>نمو استثنائي في منصة التجارة الإلكترونية</h3>
+                        <p>شهدت المنصة نمواً بنسبة 347% في عدد المتداولين النشطين خلال الربع الأخير</p>
+                        <div class="news-meta">
+                            <span class="news-date">منذ 4 ساعات</span>
+                            <span class="news-category">تحليلات</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-card">
+                    <div class="news-image">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="news-content">
+                        <h3>تكريم أفضل المتداولين العرب</h3>
+                        <p>حفل تكريم خاص لأفضل المتداولين العرب الذين حققوا إنجازات استثنائية هذا العام</p>
+                        <div class="news-meta">
+                            <span class="news-date">منذ يوم</span>
+                            <span class="news-category">فعاليات</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>منصة الأرباح الذهبية</h3>
+                    <p>المنصة الرائدة في عالم التجارة الإلكترونية والاستثمار الذكي</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#leaderboard">لوحة المتصدرين</a></li>
+                        <li><a href="#stats">الإحصائيات</a></li>
+                        <li><a href="#news">الأخبار</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>تواصل معنا</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@goldenprofits.com</p>
+                        <p><i class="fas fa-phone"></i> +212 123 456 789</p>
+                        <p><i class="fas fa-map-marker-alt"></i> الدار البيضاء، المغرب</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 منصة الأرباح الذهبية. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
